@@ -1,1 +1,20 @@
 language: ruby
+rvm: 
+- 1.9.2
+- 1.9.3
+- 2.0.0
+- 2.1.0
+- 2.1.1
+- 2.1.2
+- ruby-head
+before_install: gem update --system
+before_script: gem install rspec
+script:
+- gem build percent-of-change.gemspec
+- rspec spec --color -f doc
+matrix:
+  fast_finish: true
+  allow_failures:
+  - rvm: 1.9.2
+  - rvm: ruby-head
+ 
