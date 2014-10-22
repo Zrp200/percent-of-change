@@ -8,4 +8,5 @@ Gem::Specification.new do |s|
 	s.license = "MIT"
 	s.extra_rdoc_files = %w(README.md LICENSE)
 	s.files = %W(lib/#{s.name})
+	s.summary = "Calculates percent of change"
 end
