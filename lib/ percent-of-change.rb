@@ -1,4 +1,4 @@
-def percent-of-change(original, new, info=Hash.new(false))
+def percent_of_change(original, new, info=Hash.new(false))
   	value = new - original
   	percentage = value / original
   	percentage = percentage.to_i if info[:round]
@@ -7,4 +7,4 @@ def percent-of-change(original, new, info=Hash.new(false))
   		return percentage
   	end
 end
-alias poc percent-of-change
+alias poc percent_of_change
