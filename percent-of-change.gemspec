@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
 	s.homepage = "rubygems.org/gems/percent-of-change/#{s.version}"
 	s.license = "MIT"
 	s.extra_rdoc_files = %w(README.md LICENSE)
-	s.files = %w(lib/percent_of_change.rb)
+	s.files = "lib/percent_of_change.rb"
 	s.summary = "Calculates percent of change"
 end
