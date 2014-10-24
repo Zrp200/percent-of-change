@@ -10,11 +10,9 @@ rvm:
 - ruby-head
 before_install: 
 - gem update --system
-before_script: 
-- gem install rspec rake
 script:
-- gem build percent-of-change.gemspec && rake travis:v000
-- rspec spec --color -f doc
+- gem build percent-of-change.gemspec && bundle exec rake travis:v000
+- bundle exec rspec spec --color -f doc
 matrix:
   fast_finish: true
   allow_failures:
