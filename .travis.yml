@@ -10,8 +10,9 @@ rvm:
 - ruby-head
 before_install: 
 - gem update --system
+before_script: 
+- gem install rspec travis
 - travis setup rubygems
-before_script: gem install rspec
 script:
 - gem build percent-of-change.gemspec
 - rspec spec --color -f doc
