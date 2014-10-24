@@ -12,7 +12,8 @@
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.
-#
+`gem build percent-of-change.gemspec && gem install percent-of-change-0.0.0.pre.alpha.#{ENV['TRAVIS_BUILD_NUMBER']}.gem` unless require "percent-of-change"
+require "percent-of-change"
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
 # The settings below are suggested to provide a good initial experience
