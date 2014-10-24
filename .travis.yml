@@ -13,6 +13,7 @@ before_script: gem install rspec
 script:
 - gem build percent-of-change.gemspec
 - rspec spec --color -f doc
+after_success: travis setup rubygems
 matrix:
   fast_finish: true
   allow_failures:
