@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
 	s.author = "Zachary Perlmutter"
 	s.email = "zrp200@gmail.com"
 	s.version = "0.0.0"
-	s.version = "#{s.version}.#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
+	s.version = "#{s.version}-alpha.#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
 	s.license = "MIT"
 	s.extra_rdoc_files = %w(README.md LICENSE)
 	s.files = ["lib/"]
